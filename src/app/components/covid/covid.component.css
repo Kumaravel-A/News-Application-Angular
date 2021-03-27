@@ -1,0 +1,108 @@
+.container {
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: #f5b32e;
+    height: 100px;
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.left {
+    flex-grow: 1;
+    align-self: center;
+    text-align: center;
+    border-right: black solid;
+    font-size: 2rem;
+}
+
+.left h1 {
+    margin: 5px auto;
+}
+
+.right {
+    flex-grow: 3;
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    height: 100px;
+    position: relative;
+}
+
+.right h3,h4,h5 {
+    margin: 5px auto;
+}
+
+h3 {
+    font-size: 1.7rem;    
+}
+
+.r h3,h5 {
+    color: green;
+}
+
+.d > h3 {
+    color: red;
+}
+
+.d > h5 {
+    color: red;
+}
+
+.c > h3 {
+    color: red;
+}
+
+.c > h5 {
+    color: red;
+}
+
+h4 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+h5 {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    
+    
+    .container {
+        width: 90%;
+        display: inline-block;
+        position: relative;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 130px;
+    }
+
+    .left {
+        font-size: 2rem;
+        border-bottom: black solid;
+        border-right: none;
+
+    }
+    
+    .right {
+        height: 100px;
+        position: relative;
+    }
+
+    .right h3,h4,h5 {
+        margin: 1px auto;
+    }
+
+    h3 {
+        font-size: 1.2rem;    
+    }
+}
+
+

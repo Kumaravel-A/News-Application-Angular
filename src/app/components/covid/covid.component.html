@@ -1,0 +1,24 @@
+<div class="container" *ngIf="data">
+
+
+    <div class="left">
+        <h1> {{ data?.Country | uppercase }} </h1>
+    </div>
+    <div class="right">
+        <div class="c">
+            <h3> TotalConfirmed </h3> <h4> {{ data?.TotalConfirmed }} </h4>
+            <h5> {{ data?.NewConfirmed }} <span>&uarr;</span> </h5>
+        </div>
+
+        <div class="d">
+            <h3> TotalDeaths </h3> <h4> {{ data?.TotalDeaths }} </h4>
+            <h5> {{ data?.NewDeaths }} <span>&uarr;</span> </h5>
+        </div>
+
+        <div class="r">
+            <h3> TotalRecovered </h3> <h4> {{ data?.TotalRecovered }} </h4>
+            <h5> {{ data?.NewRecovered }} <span>&uarr;</span> </h5>
+        </div>
+        
+    </div>
+</div>

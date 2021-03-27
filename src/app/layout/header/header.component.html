@@ -1,0 +1,27 @@
+<header class="header">
+    <h1>
+        Today News
+    </h1>
+
+    <nav id="nav">
+        <button class="item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['/']">General</button>
+        <button class="item" routerLinkActive="active" [routerLink]="['/cricket']" >Cricket</button>
+        <button class="item" routerLinkActive="active" [routerLink]="['/kollywood']" >Kollywood</button>
+        <button class="item" routerLinkActive="active" [routerLink]="['/politics']">Politics</button>
+        <button class="item" routerLinkActive="active" [routerLink]="['/science']">Science</button>
+        <button class="item" routerLinkActive="active" [routerLink]="['/tech']">Technology</button>
+    </nav>
+
+    
+</header>
+
+<!-- <div class="container">
+    <ul>
+        <li [routerLink]="[ '/' ]" >General</li>
+        <li routerLinkActive="active" [routerLink]="[ '/cricket' ]" >Cricket</li>
+        <li routerLinkActive="active" [routerLink]="[ '/kollywood' ]" >Kollywood</li>
+        <li routerLinkActive="active" [routerLink]="[ '/politics' ]" >Politics</li>
+        <li routerLinkActive="active" [routerLink]="[ '/science' ]" >Science</li>
+        <li routerLinkActive="active" [routerLink]="[ '/tech' ]" >Technology</li>
+    </ul>
+</div> -->
